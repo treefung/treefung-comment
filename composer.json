@@ -1,0 +1,36 @@
+{
+    "name": "treefung/treefung-comment",
+    "description": "评论模块",
+    "type": "library",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "iFung",
+            "email": "dev@ifung.cn"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Treefung\\Comment\\": "src/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Treefung\\Comment\\CommentServiceProvider"
+            ],
+            "aliases": {
+                "Comment": "Treefung\\Comment\\Facades\\Comment"
+            }
+        }
+    }
+}
